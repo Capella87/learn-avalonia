@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:learn_avalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sty="using:FluentAvalonia.Styling"
+        xmlns:ui="using:FluentAvalonia.UI.Controls"
+        xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="learn_avalonia.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="learn_avalonia">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <!--
+    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    -->
+    <StackPanel>
+        <Button Width="150" Name="Test" Background="BlueViolet">asdf</Button>
+        <Calendar SelectionMode="SingleDate" />
+        
+    </StackPanel>
+</Window>
